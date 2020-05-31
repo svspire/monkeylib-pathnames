@@ -6,6 +6,7 @@
 
 (defpackage :com.gigamonkeys.pathnames
   (:use :common-lisp)
+  #+CCL (:import-from :ccl :directory-pathname-p)
   (:export
    :list-directory
    :file-exists-p

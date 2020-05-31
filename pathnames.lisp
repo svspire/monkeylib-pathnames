@@ -113,7 +113,8 @@ in `directory normal form'. Returns truename which will be in
    :type nil
    :defaults wildcard))
 
-
+#-CCL
+; built-in to CCL
 (defun directory-pathname-p (p)
   "Is the given pathname the name of a directory? This function can
 usefully be used to test whether a name returned by LIST-DIRECTORIES
